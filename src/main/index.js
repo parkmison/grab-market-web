@@ -27,7 +27,7 @@ function MainPage() {
       </div>
       <div id="body">
         <div id="banner">
-          <img src="images/banners/banner1.png" />
+          <img src="images/banners/banner1.png" alt="zz" />
         </div>
         <h1>판매되는 상품들</h1>
         <div id="product-list">
