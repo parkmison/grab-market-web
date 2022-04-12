@@ -17,6 +17,7 @@ import react from "react";
 function UploadPage() {
   const [imageUrl, setImageUrl] = useState(null);
   const history = useHistory();
+
   const onSubmit = (values) => {
     axios
       .post(`${API_URL}/products`, {
@@ -60,7 +61,7 @@ function UploadPage() {
             onChange={onChangeImage}
           >
             {imageUrl ? (
-              <img id="upload-img" src={`http://localhost:8082/${imageUrl}`} />
+              <img id="upload-img" src={`${API_URL}/${imageUrl}`} />
             ) : (
               <div id="upload-img-placeholder">
                 <img src="/images/icons/camera.png" />
